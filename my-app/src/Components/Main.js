@@ -2,7 +2,7 @@ export default function Main() {
   return (
     <main className="pros">
       <article>
-        <h3>1</h3>
+        <div className="serial">1</div>
         <h3>Actionable insights</h3>
         <p>
           Optimize your products, improve customer satisfaction and stay ahead
@@ -10,7 +10,7 @@ export default function Main() {
         </p>
       </article>
       <article>
-        <h3>2</h3>
+        <div className="serial">2</div>
         <h3>Data-driven decisions</h3>
         <p>
           Make data-driven decisions with our product data analytics. Our
@@ -19,7 +19,7 @@ export default function Main() {
         </p>
       </article>
       <article>
-        <h3>3</h3>
+        <div className="serial">3</div>
         <h3>Always affordable</h3>
         <p>
           Always affordable pricing that scales with your business. Get
