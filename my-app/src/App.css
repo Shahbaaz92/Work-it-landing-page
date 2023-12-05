@@ -89,6 +89,7 @@ button {
   margin-top: 200px;
   padding: 50px;
   color: var(--color-primary);
+  background-color: antiquewhite;
   display: flex;
   justify-content: space-evenly;
   gap: 20px;

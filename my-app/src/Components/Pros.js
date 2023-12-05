@@ -23,9 +23,9 @@ const articles = [
 ];
 
 function Article(props) {
-  const { id, number, title, about } = props;
+  const { number, title, about } = props;
   return (
-    <article key={id} className="article">
+    <article className="article">
       <div className="serial">{number}</div>
       <h3>{title}</h3>
       <p>{about}</p>
@@ -36,9 +36,8 @@ function Article(props) {
 export default function Pros() {
   return (
     <main className="pros">
-      {articles.map((article) => {
-        const { id, number, title, about } = article;
-        return <Article key={id} number={number} title={title} about={about} />;
+      {articles.map((article, index) => {
+        return <Article {...article} key={article.id} />;
       })}
     </main>
   );
