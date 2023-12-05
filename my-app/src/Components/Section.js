@@ -1,6 +1,8 @@
+import founder from "../assets/images/image-founder.webp";
 export default function Section() {
   return (
-    <div className="info">
+    <div className="info" id="info">
+      <img src={founder} alt="founder" className="founder-img" />
       <div className="info-details">
         <h2>Be the first to test</h2>
         <p>
