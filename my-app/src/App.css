@@ -56,18 +56,27 @@ button {
   border: none;
   padding: 16px 32px;
 }
+button:hover {
+  border: 2px solid var(--color-button);
+  background-color: var(--color-primary);
+  color: #44ffa1;
+}
+nav a:hover {
+  color: var(--color-button);
+}
 .container {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100vw;
   max-width: 1440px;
   height: auto;
-  overflow: hidden;
   padding-bottom: 110px;
 }
 .hero {
   position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,9 +219,9 @@ h1 span {
   justify-content: space-around;
   gap: 20px;
 }
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1400px) {
   .container {
-    width: 100%;
+    width: 99.99%;
   }
 
   .info {
@@ -253,6 +262,7 @@ h1 span {
     gap: 32px;
   }
   .serial {
+    font-size: 1.25rem;
     width: 48px;
     height: 46px;
     flex-shrink: 0;
@@ -268,25 +278,24 @@ h1 span {
     padding-right: 20px;
   }
   .info-details {
-    width: 514px;
-    height: 375px;
+    width: 500px;
+    height: auto;
     flex-shrink: 0;
     left: 400px;
     height: auto;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 930px) {
   h1 {
     line-height: 60px;
   }
   .hero {
     height: 540px;
-    gap: 30px;
     padding: 30px;
   }
   .phone-img {
-    width: 470.441px;
-    height: 271.837px;
+    width: 470px;
+    height: 272px;
     flex-shrink: 0;
   }
   .background-1 {
@@ -305,13 +314,83 @@ h1 span {
     flex-shrink: 0;
   }
   .info-details {
+    width: 450px;
     left: 230px;
     top: 270px;
-    /* width: 70%; */
   }
   .footer {
     margin-top: 150px;
   }
 }
 @media screen and (max-width: 750px) {
+  .info {
+    padding-left: 10px;
+  }
+  .info-details {
+    left: 130px;
+    top: 320px;
+  }
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3.125rem;
+    line-height: 50px;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 48px;
+  }
+  h3 {
+    font-size: 1.75rem;
+    line-height: 36px;
+  }
+  .hero {
+    height: 482px;
+  }
+  .phone-img {
+    width: 293px;
+    height: 169px;
+    flex-shrink: 0;
+  }
+  .background-1,
+  .background-2,
+  .background-3 {
+    display: none;
+  }
+  .pros {
+    gap: 40px;
+  }
+  .article {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .info {
+    padding: 0;
+    margin: inherit 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  .info-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: -60px;
+    width: 80%;
+    min-width: 343px;
+    flex-shrink: 0;
+    padding: 32px;
+  }
+  .footer {
+    margin-top: 70px;
+  }
 }
