@@ -216,11 +216,10 @@ h1 span {
   }
 
   .info {
-    padding: 110px 80px;
+    padding: 110px 40px;
   }
   .info-details {
-    left: 450px;
-    width: 60%;
+    left: 400px;
     padding: 2em;
   }
 
@@ -269,14 +268,14 @@ h1 span {
     padding-right: 20px;
   }
   .info-details {
-    /* top: 350px; */
-    left: 400px;
-
-    height: auto;
+    width: 514px;
+    height: 375px;
     flex-shrink: 0;
+    left: 400px;
+    height: auto;
   }
 }
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 900px) {
   h1 {
     line-height: 60px;
   }
@@ -297,8 +296,8 @@ h1 span {
     right: -100px;
   }
   .info {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .founder-img {
     width: 281px;
@@ -308,9 +307,11 @@ h1 span {
   .info-details {
     left: 220px;
     top: 270px;
-    width: 70%;
+    /* width: 70%; */
   }
   .footer {
     margin-top: 150px;
   }
+}
+@media screen and (max-width: 750px) {
 }
