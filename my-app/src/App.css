@@ -296,7 +296,7 @@ h1 span {
     right: -100px;
   }
   .info {
-    padding-left: 20px;
+    padding-left: 50px;
     padding-right: 20px;
   }
   .founder-img {
@@ -305,7 +305,7 @@ h1 span {
     flex-shrink: 0;
   }
   .info-details {
-    left: 220px;
+    left: 230px;
     top: 270px;
     /* width: 70%; */
   }
