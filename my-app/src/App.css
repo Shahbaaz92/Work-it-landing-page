@@ -28,7 +28,7 @@ h3 {
 }
 h1 {
   font-size: 5rem;
-  line-height: 95px;
+  line-height: 80px;
   text-align: center;
 }
 h2 {
@@ -60,7 +60,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   max-width: 1440px;
   height: auto;
   overflow: hidden;
@@ -71,7 +71,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 165px;
+  padding: 60px;
   gap: 50px;
   background-color: var(--color-primary);
   color: var(--color-secondary);
@@ -110,7 +110,7 @@ nav a:hover {
   align-items: center;
 }
 h1 span {
-  border-bottom: 3px solid var(--color-button);
+  text-decoration: 3px underline var(--color-button);
 }
 .phone-img {
   width: 702px;
@@ -129,7 +129,7 @@ h1 span {
 }
 .pros {
   margin-top: 200px;
-  padding: 50px 165px;
+  padding: 60px;
   color: var(--color-primary);
   display: flex;
   justify-content: space-evenly;
@@ -140,6 +140,7 @@ h1 span {
 .article {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 28px;
 }
 .serial {
@@ -157,17 +158,24 @@ h1 span {
   height: 56px;
   margin-bottom: 28px;
 }
+.pro-title {
+  margin-bottom: 28px;
+}
+.about {
+  color: var(--color-social);
+}
 .info {
   position: relative;
-  margin-top: 120px;
-  padding: 110px 165px 230px;
+  margin: 120px auto;
+  padding: 110px;
   color: var(--color-secondary);
   width: 100%;
+  display: flex;
+  justify-content: start;
 }
 .founder-img {
   width: 477px;
   height: 477px;
-  flex-shrink: 0;
 }
 .info-details {
   background-color: var(--color-primary);
@@ -176,17 +184,18 @@ h1 span {
   flex-shrink: 0;
   position: absolute;
   top: 283px;
-  left: 550px;
+  left: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: start;
   padding: 64px;
+  gap: 15px;
 }
 .background-3 {
   position: absolute;
-  bottom: 65px;
-  right: 250px;
+  bottom: -60px;
+  right: 60px;
 }
 .footer {
   margin-top: 60px auto 110px;
@@ -201,5 +210,107 @@ h1 span {
   justify-content: space-around;
   gap: 20px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+
+  .info {
+    padding: 110px 80px;
+  }
+  .info-details {
+    left: 450px;
+    width: 60%;
+    padding: 2em;
+  }
+
+  .background-3 {
+    bottom: -80px;
+    right: 10px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  p,
+  button,
+  nav a {
+    font-size: 1rem;
+  }
+  .pros {
+    flex-direction: column;
+  }
+  .article {
+    flex-direction: row;
+    text-align: start;
+    padding: auto 20px;
+    gap: 32px;
+  }
+  .serial {
+    width: 48px;
+    height: 46px;
+    flex-shrink: 0;
+    padding: 0;
+    margin: 0;
+  }
+  .pro-title {
+    margin-bottom: 16px;
+  }
+
+  .info {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .info-details {
+    /* top: 350px; */
+    left: 400px;
+
+    height: auto;
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 870px) {
+  h1 {
+    line-height: 60px;
+  }
+  .hero {
+    height: 540px;
+    gap: 30px;
+    padding: 30px;
+  }
+  .phone-img {
+    width: 470.441px;
+    height: 271.837px;
+    flex-shrink: 0;
+  }
+  .background-1 {
+    left: -220px;
+  }
+  .background-2 {
+    right: -100px;
+  }
+  .info {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .founder-img {
+    width: 281px;
+    height: 281px;
+    flex-shrink: 0;
+  }
+  .info-details {
+    left: 220px;
+    top: 270px;
+    width: 70%;
+  }
+  .footer {
+    margin-top: 150px;
+  }
 }

@@ -13,12 +13,12 @@ export default function Section() {
           call.
         </p>
         <button>Apply for access</button>
+        <img
+          src={background3}
+          alt="background-pattern"
+          className="background-3"
+        />
       </div>
-      <img
-        src={background3}
-        alt="background-pattern"
-        className="background-3"
-      />
     </div>
   );
 }

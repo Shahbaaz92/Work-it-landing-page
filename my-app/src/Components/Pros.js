@@ -27,8 +27,10 @@ function Article(props) {
   return (
     <article className="article">
       <div className="serial">{number}</div>
-      <h3>{title}</h3>
-      <p>{about}</p>
+      <div>
+        <h3 className="pro-title">{title}</h3>
+        <p className="about">{about}</p>
+      </div>
     </article>
   );
 }
