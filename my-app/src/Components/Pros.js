@@ -1,0 +1,45 @@
+const articles = [
+  {
+    id: 1,
+    number: 1,
+    title: "Actionable insights",
+    about:
+      "Optimize your products, improve customer satisfaction and stay ahead of the competition with our product data analytics.",
+  },
+  {
+    id: 2,
+    number: 2,
+    title: "Data-driven decisions",
+    about:
+      "Make data-driven decisions with our product data analytics. Our AI-generated reports help you unlock insights hidden in your product data.",
+  },
+  {
+    id: 3,
+    number: 3,
+    title: "Always affordable",
+    about:
+      "Always affordable pricing that scales with your business Get top-quality product data analytics services without hidden costs or unexpected fees.",
+  },
+];
+
+function Article(props) {
+  const { id, number, title, about } = props;
+  return (
+    <article key={id} className="article">
+      <div className="serial">{number}</div>
+      <h3>{title}</h3>
+      <p>{about}</p>
+    </article>
+  );
+}
+
+export default function Pros() {
+  return (
+    <main className="pros">
+      {articles.map((article) => {
+        const { id, number, title, about } = article;
+        return <Article key={id} number={number} title={title} about={about} />;
+      })}
+    </main>
+  );
+}
