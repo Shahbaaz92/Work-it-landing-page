@@ -16,8 +16,16 @@ export default function Header() {
         <button>Learn more</button>
       </section>
       <img src={phoneImg} className="phone-img" alt="phone" />
-      <img src={background1} alt="background" className="background-1" />
-      <img src={background2} alt="background" className="background-2" />
+      <img
+        src={background1}
+        alt="background-pattern"
+        className="background-1"
+      />
+      <img
+        src={background2}
+        alt="background-pattern"
+        className="background-2"
+      />
     </header>
   );
 }

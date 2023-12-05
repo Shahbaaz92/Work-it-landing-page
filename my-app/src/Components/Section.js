@@ -1,4 +1,5 @@
 import founder from "../assets/images/image-founder.webp";
+import background3 from "../assets/images/bg-pattern-3.svg";
 export default function Section() {
   return (
     <div className="info" id="info">
@@ -13,6 +14,11 @@ export default function Section() {
         </p>
         <button>Apply for access</button>
       </div>
+      <img
+        src={background3}
+        alt="background-pattern"
+        className="background-3"
+      />
     </div>
   );
 }
